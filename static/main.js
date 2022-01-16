@@ -82,3 +82,6 @@ function Order (size, crust, toppings, quantity, deliveryCost) {
         if(toppings.includes("pepper")){
             toppingsCost += toppingsSmall.pepper;
         }
+
+        totalCost = (pizzaPrices.medium * quantity) + (toppingsCost * quantity) + deliveryCost;
+    } else if (myOrder.size == "large") {
