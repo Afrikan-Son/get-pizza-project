@@ -54,3 +54,7 @@ function Order (size, crust, toppings, quantity, deliveryCost) {
   
     alert("You will be charged Ksh " + deliveryCost + " for Delivery");
   
+    if(myOrder.size == "small") {
+        if(toppings.includes("mushroom")){
+          toppingsCost += toppingsSmall.mushroom;
+        }
