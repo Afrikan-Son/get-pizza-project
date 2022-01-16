@@ -76,3 +76,6 @@ function Order (size, crust, toppings, quantity, deliveryCost) {
         if(toppings.includes("bacon")){
             toppingsCost += toppingsSmall.bacon;
         }
+        if(toppings.includes("pineapple")){
+            toppingsCost += toppingsSmall.pineapple;
+        }
