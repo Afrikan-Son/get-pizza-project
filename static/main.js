@@ -33,3 +33,19 @@ function Order (size, crust, toppings, quantity, deliveryCost) {
     large: 1000
   };
   
+  $("#submit").on('click', () => {
+    let size = $('#size').val();
+    let crust = $('#crust').val();
+    let toppings = $('#toppings').val();
+    let quantity = Number($('#quantity').val());
+    let delivery = $('#delivery').val();
+    let deliveryCost;
+    let toppingsCost = 0;
+    let totalCost = 0;
+  
+    if (delivery !== ""){
+      deliveryCost = 100;
+    }
+    else {
+      deliveryCost = 0;
+    }
