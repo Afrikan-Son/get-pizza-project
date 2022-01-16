@@ -102,3 +102,8 @@ function Order (size, crust, toppings, quantity, deliveryCost) {
     } else {
       alert("Please Choose a pizza size");
     }
+
+    document.getElementById("totalCost").innerHTML = totalCost;
+    document.getElementById("toppingsCost").innerHTML = toppingsCost * quantity;
+    document.getElementById("deliveryCost").innerHTML = deliveryCost;
+  });
