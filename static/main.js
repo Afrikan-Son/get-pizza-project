@@ -56,5 +56,8 @@ function Order (size, crust, toppings, quantity, deliveryCost) {
   
     if(myOrder.size == "small") {
         if(toppings.includes("pepperoni")){
-          toppingsCost += toppingsSmall.mushroom;
+          toppingsCost += toppingsSmall.pepperoni;
         }
+        if(toppings.includes("pineapple")){
+            toppingsCost += toppingsSmall.pineapple;
+          }
