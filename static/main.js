@@ -49,3 +49,8 @@ function Order (size, crust, toppings, quantity, deliveryCost) {
     else {
       deliveryCost = 0;
     }
+
+    let myOrder = new Order(size, crust, toppings, quantity, deliveryCost);
+  
+    alert("You will be charged Ksh " + deliveryCost + " for Delivery");
+  
